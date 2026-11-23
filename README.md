@@ -22,7 +22,7 @@ The two replicas are separate processes and communicate over HTTP. The primary i
 This project uses Python 3 and only the standard library.
 
 ```bash
-cd "/Users/mathewolickal/Desktop/SE Course Material/CMPE-273/replication_consistency"
+cd "<project-folder>/replication_consistency"
 python3 --version
 ```
 
@@ -38,7 +38,7 @@ python3 replica.py --role secondary --port 8001 --stock 10
 Terminal 2 — start the primary:
 
 ```bash
-cd "/Users/mathewolickal/Desktop/SE Course Material/CMPE-273/replication_consistency"
+cd "<project-folder>/replication_consistency"
 python3 replica.py --role primary --port 8000 --stock 10 --peer-url http://127.0.0.1:8001 --delay 1
 ```
 
